@@ -15,10 +15,7 @@ app.set('view engine', 'ejs');
 
 // Define the root route
 app.get('/', (req, res) => {
-    res.render('index', { 
-        title: 'Home Page', 
-        message: 'Welcome to Express with EJS!' 
-    });
+    res.send("HEllo");
 });
 
 // Handle 404 errors
