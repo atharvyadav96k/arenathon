@@ -29,7 +29,7 @@ app.use((req, res) => {
 // Global error handler for server errors
 app.use((err, req, res, next) => {
     console.error(err.message);
-    res.status(200).send('Something went wrong!');
+    res.status(200).send(err.message);
 });
 
 // Start the server
