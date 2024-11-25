@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 // Define the root route
 app.get('/', (req, res) => {
-    res.send("HEllo");
+    res.render("index");
 });
 
 // Handle 404 errors
